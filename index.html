@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookmarker</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+
+</head>
+<body class="bg-body-secondary">
+<section class="text-center  w-75 mx-auto ">
+    <h1 class="text-danger my-5" >Bookmarker</h1>
+    <hr>
+    <h2 class="text-danger my-5"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites<i class="fa-solid fa-bookmark"></i></h2>
+    <div class="container w-75 ">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="name" placeholder="write bookmark name">
+            <label for="name" class="text-body-tertiary ">Bookmark name</label>
+          </div>
+          <div class="form-floating">
+            <input type="text" class="form-control" id="url" placeholder="write bookmark URL">
+            <label for="url" class="text-body-tertiary">Bookmark Url</label>
+          </div>
+          <button onclick="addBookmark()" type="button" class="btn btn-primary w-25 my-5">Submit</button>
+    </div>
+    <table class="table my-5">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Bookmark Name</th>
+            <th scope="col">Visit</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody id="table">
+
+        </tbody>
+      </table>
+</section>
+
+
+ 
+<script src="./js/main.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
